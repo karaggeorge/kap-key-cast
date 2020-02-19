@@ -1,0 +1,36 @@
+{
+	"name": "kap-key-cast",
+	"version": "1.0.0",
+	"description": "Log keys pressed while recording",
+	"license": "MIT",
+	"repository": "karaggeorge/kap-key-cast",
+	"author": {
+		"name": "George Karagkiaouris",
+		"email": "gkaragkiaouris2@gmail.com",
+		"url": "https://gkaragkiaouris.tech"
+	},
+	"scripts": {
+		"test": "xo"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"kap-plugin",
+		"key",
+		"casst",
+		"log",
+		"keyboard",
+		"presses"
+	],
+	"kapVersion": ">=3.2.0",
+	"dependencies": {
+		"macos-accessibility-permissions": "^1.0.1",
+		"macos-key-cast": "^1.1.7"
+	},
+	"devDependencies": {
+		"ava": "^2.3.0",
+		"kap-plugin-test": "^0.5.0",
+		"xo": "^0.24.0"
+	}
+}
