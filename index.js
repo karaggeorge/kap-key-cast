@@ -33,18 +33,19 @@ const config = {
 	}
 };
 
-const willStartRecording = async ({state, config, options: {screenId}}) => {
+const willStartRecording = async ({state, config, options: {screenId, cropArea}}) => {
 	if (!hasPermissions({ask: true})) {
 		return;
 	}
 
-	const {size, delay, keyCombinationsOnly} = config.store;
+	const {size, delay, keyCombinationsOnly, centerInCropper} = config.store;
 
 	state.process = castKeys({
 		display: screenId,
 		size: size.toLowerCase(),
 		delay,
-		keyCombinationsOnly
+		keyCombinationsOnly,
+		bounds: centerInCropper ? cropArea : undefined
 	});
 };
 
