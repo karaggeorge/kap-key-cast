@@ -1,6 +1,6 @@
 {
 	"name": "kap-key-cast",
-	"version": "1.0.1",
+	"version": "1.1.0",
 	"description": "Log keys pressed while recording",
 	"license": "MIT",
 	"repository": "karaggeorge/kap-key-cast",
