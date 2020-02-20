@@ -55,11 +55,16 @@ const didStopRecording = async ({state}) => {
 	}
 };
 
+const willEnable = () => {
+	return hasPermissions({ask: true});
+}
+
 const keysPressed = {
 	title: 'Show keys pressed',
 	config,
 	willStartRecording,
-	didStopRecording
+	didStopRecording,
+	willEnable
 };
 
 exports.recordServices = [keysPressed];
