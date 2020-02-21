@@ -10,4 +10,4 @@ In the `Kap` menu, go to `Preferences…`, select the `Plugins` pane, find this 
 
 ## Usage
 
-In the cropper or by right clicking the tray icon, click the `…` icon, then `Plugins` and make sure `Show keys pressed` is enabled.
+In the cropper or by right clicking the tray icon, click the `…` icon, then `Plugins` and make sure `Show Keys Pressed` is enabled.
