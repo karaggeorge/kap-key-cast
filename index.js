@@ -33,7 +33,7 @@ const config = {
 	}
 };
 
-const willStartRecording = async ({state, config, options: {screenId, cropArea}}) => {
+const willStartRecording = async ({state, config, apertureOptions: {screenId, cropArea}}) => {
 	if (!hasPermissions({ask: true})) {
 		return;
 	}
