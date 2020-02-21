@@ -60,7 +60,7 @@ const willEnable = () => {
 }
 
 const keysPressed = {
-	title: 'Show keys pressed',
+	title: 'Show Keys Pressed',
 	config,
 	willStartRecording,
 	didStopRecording,
