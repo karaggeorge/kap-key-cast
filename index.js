@@ -26,7 +26,7 @@ const config = {
 		default: true
 	},
 	centerInCropper: {
-		title: 'Center in cropper',
+		title: 'Center in Cropper',
 		description: 'When enabled, the UI will use the cropper area to position. Otherwise it will use the whole screen.',
 		type: 'boolean',
 		default: true
@@ -60,7 +60,7 @@ const willEnable = () => {
 }
 
 const keysPressed = {
-	title: 'Show Keys Pressed',
+	title: 'Show Pressed Keys',
 	config,
 	willStartRecording,
 	didStopRecording,
