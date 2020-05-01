@@ -57,7 +57,7 @@ const didStopRecording = async ({state}) => {
 
 const willEnable = () => {
 	return hasPermissions({ask: true});
-}
+};
 
 const keysPressed = {
 	title: 'Show Pressed Keys',
