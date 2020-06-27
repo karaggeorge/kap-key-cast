@@ -23,7 +23,7 @@ const config = {
 		title: 'Key Combinations Only',
 		description: 'When enabled, the UI will only show for combinations with accelerators.',
 		type: 'boolean',
-		default: true
+		default: false
 	},
 	centerInCropper: {
 		title: 'Center in Cropper',
