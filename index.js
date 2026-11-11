@@ -2,6 +2,12 @@
 const castKeys = require('macos-key-cast');
 const hasPermissions = require('macos-accessibility-permissions');
 
+const assertPermissions = () => {
+	if (!hasPermissions({ask: true})) {
+		throw new Error('Kap needs Accessibility permissions to show pressed keys. Enable Kap in System Settings → Privacy & Security → Accessibility, then restart Kap.');
+	}
+};
+
 const config = {
 	size: {
 		title: 'Size',
@@ -34,9 +40,7 @@ const config = {
 };
 
 const willStartRecording = async ({state, config, apertureOptions: {screenId, cropArea}}) => {
-	if (!hasPermissions({ask: true})) {
-		return;
-	}
+	assertPermissions();
 
 	const {size, delay, keyCombinationsOnly, centerInCropper} = config.store;
 
@@ -56,7 +60,8 @@ const didStopRecording = async ({state}) => {
 };
 
 const willEnable = () => {
-	return hasPermissions({ask: true});
+	assertPermissions();
+	return true;
 };
 
 const keysPressed = {
