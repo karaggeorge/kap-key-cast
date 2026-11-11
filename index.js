@@ -7,7 +7,7 @@ const config = {
 		title: 'Size',
 		description: 'Size of the UI.',
 		type: 'string',
-		enum: ['Small', 'Normal', 'Large'],
+		enum: ['Small', 'Normal', 'Large', 'X-Large', 'XX-Large', 'XXX-Large'],
 		default: 'Normal',
 		required: true
 	},
